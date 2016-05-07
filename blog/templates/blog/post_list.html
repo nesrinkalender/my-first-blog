@@ -8,11 +8,13 @@
     <section>
       <h1>Nesrin Kalender</h1>
       <ul>
+        {% for post in posts %}
         <li>
-          <a href="#">Merhaba</a>
-          <span>Publish time</span>
+          <a href="">{{ post.baslik }}</a>
+          <span>Publish time: {{ post.yayinlama_tarihi }}</span>
           <p>lorem ipsum</p>
         </li>
+        {% endfor %}
       </ul>
     </section>
   </body>
